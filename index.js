@@ -6,7 +6,7 @@ function myFunc() {
         x.className = "topnav";
     }
 }
-let newYear = new Date("Apr 14, 2022 00:00:00").getTime();
+let newYear = new Date("Jan 1, 2023 00:00:00").getTime();
 let x = setInterval(function() {
   let now = new Date().getTime();
   let distance = newYear - now;
@@ -17,6 +17,6 @@ let x = setInterval(function() {
   document.getElementById("infin").innerHTML = days + " Days " +", "+ hours + " Hours " +" , "+ minutes + " Minutes , " + seconds + " Seconds ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("infin").innerHTML = "HAPPY NEW YEAR 2079 BS"+" May This New Year Brings joy in your family:)";
+    document.getElementById("infin").innerHTML = "HAPPY NEW YEAR 2023 AD"+" May This New Year Brings joy in your family:)";
   }
 }, 1000);
